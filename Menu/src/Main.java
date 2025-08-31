@@ -15,6 +15,14 @@ public class Main {
         System.out.println(" ");
 
         System.out.print("Selecione uma opção: ");
+
+        while (!sc.hasNextInt()) {
+            System.out.println("Entrada inválida! Por favor, digite novamente.");
+            System.out.println(" --------------- ");
+            System.out.print("Selecione uma opção: ");
+            sc.next();
+        }
+
         int op = sc.nextInt();
 
         switch (op) {
